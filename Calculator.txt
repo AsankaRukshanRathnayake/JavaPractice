@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Calculator {
+
+    public static void main(String[] args) {
+
+        System.out.println("Hello!");
+        System.out.println("What do you want to do?\n");
+
+        System.out.println("press num 1 for sum");
+        System.out.println("press num 2 for diff");
+        System.out.println("press num 3 for multi");
+        System.out.println("press num 4 for divid\n");
+
+        System.out.print("Press your option .....");
+        Scanner myObj= new Scanner(System.in);
+        byte operator=myObj.nextByte();
+
+        System.out.print("\nEnter number1....");
+        Scanner myObj1= new Scanner(System.in);
+        double num1=myObj1.nextDouble();
+
+        System.out.print("\nEnter number2....");
+        Scanner myObj2= new Scanner(System.in);
+        double num2=myObj2.nextDouble();
+
+        System.out.print("\nAnswer is .... ");
+
+        if (operator==1)
+            System.out.println(num1+num2);
+        else if (operator==2)
+            System.out.println(num1-num2);
+        else if (operator==3)
+            System.out.println(num1*num2);
+        else
+            System.out.println(num1/num2);
+
+    }
+}
